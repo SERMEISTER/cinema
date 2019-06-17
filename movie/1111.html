@@ -1,0 +1,191 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylePage2.css">
+
+    <script src='./sourcePage2.js'></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <title>Cinema</title>
+</head>
+
+<body>
+
+    <div class="App">
+        <div class="wraper">
+            <div class="header">
+                <div class="main-width header-top">
+                    <p class="header-telephone">
+                        тел:
+                        <a class="header-telephone-link" href="#">
+                            (099) 999-99-99
+                        </a>
+                    </p>
+                </div>
+                <div class="header-bottom main-width">
+                    <a href="#">
+                        <img src="./icons/cinema-logo.PNG" class="header-logo" alt="header-logo">
+                    </a>
+
+                    <ul class="header-navigation">
+                        <li>
+                            <a href="#session">Сеанси</a>
+                        </li>
+                        <li>
+                            <a href="#contacts">Контакти</a>
+                        </li>
+                    </ul>
+
+                    <ul class="header-links">
+                        <li>
+                            <a href="https://instagram.com/">
+                                <img src="icons/icon-instagram.svg" class="icon-instagram" alt="instagram">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://facebook.com/">
+                                <img src="icons/icon-facebook.svg" alt="facebook">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="main-body">
+                <div class="slider">
+                    <div class="slider-wrapper" id="id-slider-wrapper" style="margin-left: 0px;">
+                        <a class="slider-slide" style="background-image: url(./images/1.jpeg);"></a>
+                        <a class="slider-slide" style="background-image: url(./images/2.jpeg);"></a>
+                        <a class="slider-slide" style="background-image: url(./images/3.jpeg);"></a>
+                        <a class="slider-slide" style="background-image: url(./images/4.jpeg);"></a>
+                        <a class="slider-slide" style="background-image: url(./images/5.jpeg);"></a>
+                        <a class="slider-slide" style="background-image: url(./images/6.jpeg);"></a>
+                    </div>
+
+                    <div class="slider-button slider-button-right" onclick="rightSlide()"></div>
+                    <div class="slider-button slider-button-left" onclick="leftSlide()"></div>
+                </div>
+
+            </div>
+
+            <div class="schedule">
+                <div class="main-width">
+                    <h1>Сеанси</h1>
+                    <ul class="schedule-dates">
+                        <li>15 червня, сб</li>
+                        <li>16 червня, нд</li>
+                        <li>17 червня, пн</li>
+                        <li>18 червня, вт</li>
+                        <li>19 червня, ср</li>
+                    </ul>
+
+                    <div class="schedule-films">
+                        <div class="schedule-film">
+                            <a href="./movie/1111.html"></a>
+                        </div>
+                        <div class="schedule-film">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="buffer"></div>
+        </div>
+
+
+        <div class="footer">
+
+            <p class="mountain-lake-text">A lake is an area filled with water</p>
+            <hr class="line-2">
+
+            <p class="text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+                velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+                voluptatem.</p>
+
+            <h3 class="headline-H3">Sed ut perspiciatis unde omnis iste</h3>
+            <p class="text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                laudantium, totam rem aperiam, <b>eaque ipsa quae ab illo inventore</b> veritatis et quasi <u
+                    style="color:#5a5aff">architecto beatae</u> vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                quia voluptas sit aspernatur aut odit aut fugit.</p>
+            <h4 class="headline-H4">Duis aute irure dolor in reprehenderit</h4>
+            <p class="text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                id est laborum.</p>
+            <blockquote class="quote">“At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias”</blockquote>
+            <p class="text">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id
+                quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus
+                autem quibusdam et aut officiis.</p>
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                ut aliquip ex ea commodo consequat.</p>
+
+        </div>
+    </div>
+
+
+    <script>
+        window.onscroll = function () {
+            var num = window.pageYOffset;
+
+            //console.log(num);
+            var header = document.getElementsByClassName('header');
+            header = header[0];
+            //console.log(header);
+            var atribute;
+
+            if (num == 0) {
+                atribute = "header";
+                header.setAttribute("class", atribute);
+            }
+            else {
+                atribute = "header scrolled";
+                header.setAttribute("class", atribute);
+            }
+            //console.log(atribute);
+        }
+
+
+        function rightSlide(){
+            var slide = document.getElementById("id-slider-wrapper");
+            if(parseInt(slide.style.marginLeft) != -2848)
+            {
+                slide.style.marginLeft = parseInt(slide.style.marginLeft) -712 + "px";
+            }
+            //console.log( parseInt(slide.style.marginLeft));
+        }
+        function leftSlide(){
+            var slide = document.getElementById("id-slider-wrapper");
+            if(parseInt(slide.style.marginLeft) != 0)
+            {
+                slide.style.marginLeft = parseInt(slide.style.marginLeft) +712 + "px";
+            }
+        }
+    </script>
+
+
+
+    <!-- <script>
+        function show(shown, hidden) {
+          document.getElementById(shown).style.display='block';
+          document.getElementById(hidden).style.display='none';
+          return false;
+        }
+    </script>
+ 
+    <div id="Page1">
+        Content of page 1
+        <a href="#" onclick="return show('Page2','Page1');">Show page 2</a>
+     </div>
+
+    <div id="Page2" style="display:none">
+        Content of page 2
+        <a href="#" onclick="return show('Page1','Page2');">Show page 1</a>
+    </div> -->
+</body>
+
+</html>

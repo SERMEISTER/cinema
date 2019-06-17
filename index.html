@@ -1,0 +1,255 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylePage2.css">
+
+    <script src='./sourcePage2.js'></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <title>Cinema</title>
+</head>
+
+<body>
+
+    <div class="App">
+        <div class="wraper">
+            <div class="header">
+                <div class="main-width header-top">
+                    <p class="header-telephone">
+                        тел:
+                        <a class="header-telephone-link" href="#">
+                            (099) 999-99-99
+                        </a>
+                    </p>
+                </div>
+                <div class="header-bottom main-width">
+                    <a href="#">
+                        <img src="./icons/cinema-logo.PNG" class="header-logo" alt="header-logo">
+                    </a>
+
+                    <ul class="header-navigation">
+                        <li>
+                            <a href="#session">Сеанси</a>
+                        </li>
+                        <li>
+                            <a href="#contacts">Контакти</a>
+                        </li>
+                    </ul>
+
+                    <ul class="header-links">
+                        <li>
+                            <a href="https://instagram.com/">
+                                <img src="icons/icon-instagram.svg" class="icon-instagram" alt="instagram">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://facebook.com/">
+                                <img src="icons/icon-facebook.svg" alt="facebook">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <nav class="navbar fixed-top  navbar-expand-lg navbar-light bg-light  mobile-see">
+                <div>
+                    <a class="navbar-brand" href="#">
+                        <img src="./icons/cinema-logo.PNG" class="header-logo" alt="header-logo">
+                    </a>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dropdown link
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+
+            <div class="main-body">
+                <div class="slider">
+                    <div class="slider-wrapper" id="id-slider-wrapper" style="margin-left: 0px;">
+                        <a class="slider-slide" style="background-image: url(./images/1.jpeg);"></a>
+                        <a class="slider-slide" style="background-image: url(./images/2.jpeg);"></a>
+                        <a class="slider-slide" style="background-image: url(./images/3.jpeg);"></a>
+                        <a class="slider-slide" style="background-image: url(./images/4.jpeg);"></a>
+                        <a class="slider-slide" style="background-image: url(./images/5.jpeg);"></a>
+                        <a class="slider-slide" style="background-image: url(./images/6.jpeg);"></a>
+                    </div>
+
+                    <div class="slider-button slider-button-right" style="display: block;" onclick="rightSlide()" ></div>
+                    <div class="slider-button slider-button-left"  style="display: none;" onclick="leftSlide()"></div>
+                </div>
+
+            </div>
+
+            <div class="schedule">
+                <div class="main-width">
+                    <h1>Сеанси</h1>
+                    <ul class="schedule-dates">
+                        <li>15 червня, сб</li>
+                        <li>16 червня, нд</li>
+                        <li>17 червня, пн</li>
+                        <li>18 червня, вт</li>
+                        <li>19 червня, ср</li>
+                    </ul>
+
+                    <div class="schedule-films">
+                        <div class="schedule-film">
+                            <a href="./movie/1111.html">
+                                <img class="schedule-film-poster" src="./images/1.jpeg" alt="Велика мандрівка">
+                                <p class="schedule-film-title">Велика мандрівка</p>
+                            </a>
+
+                        </div>
+                        <div class="schedule-film">
+                            <a href="./movie/1111.html">
+                                <img class="schedule-film-poster" src="./images/1.jpeg" alt="Велика мандрівка">
+                                <p class="schedule-film-title">Велика мандрівка</p>
+                            </a>
+
+                        </div>
+                        <div class="schedule-film">
+                            <a href="./movie/1111.html">
+                                <img class="schedule-film-poster" src="./images/1.jpeg" alt="Велика мандрівка">
+                                <p class="schedule-film-title">Велика мандрівка</p>
+                            </a>
+
+                        </div>
+                        <div class="schedule-film">
+                            <a href="./movie/1111.html">
+                                <img class="schedule-film-poster" src="./images/1.jpeg" alt="Велика мандрівка">
+                                <p class="schedule-film-title">Велика мандрівка</p>
+                            </a>
+
+                        </div>
+                        <div class="schedule-film">
+                            <a href="./movie/1111.html">
+                                <img class="schedule-film-poster" src="./images/1.jpeg" alt="Велика мандрівка">
+                                <p class="schedule-film-title">Велика мандрівка</p>
+                            </a>
+
+                        </div>
+                        <div class="schedule-film">
+                            <a href="./movie/1111.html">
+                                <img class="schedule-film-poster" src="./images/1.jpeg" alt="Велика мандрівка">
+                                <p class="schedule-film-title">Велика мандрівка</p>
+                            </a>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="buffer"></div>
+        </div>
+
+
+        <div class="footer">
+            <div class="main-width">
+                <div class="footer-section">
+                    <p class="footer-section-header">Кінотеатр</p>
+                    <p>
+                        <a href="#">Сеанси</a>
+                    </p>
+                    <p>
+                        <a href="#">Репертуар</a>
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <p class="footer-section-header">Про нас</p>
+                    <p>
+                        <a href="#">Зали</a>
+                    </p>
+                    <p>
+                        <a href="#">Афіша</a>
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <p class="footer-section-header">Наші координати</p>
+                    <p>
+                        <a href="#">Замовникам</a>
+                    </p>
+                    <p>
+                        <a href="#">Контакти</a>
+                    </p>
+                    <p>
+                        <a href="#">Повернення квитків</a>
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <p class="footer-section-header">Ми в мережі</p>
+                    <p>
+                        <a href="http://instagram.com">
+                            <img src="./icons/icon-facebook-white.svg" alt>
+                        </a>
+                        <a href="http://facebook.com">
+                            <img src="./icons/icon-instagram-white.svg" alt>
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- <script>
+        function show(shown, hidden) {
+          document.getElementById(shown).style.display='block';
+          document.getElementById(hidden).style.display='none';
+          return false;
+        }
+    </script>
+ 
+    <div id="Page1">
+        Content of page 1
+        <a href="#" onclick="return show('Page2','Page1');">Show page 2</a>
+     </div>
+
+    <div id="Page2" style="display:none">
+        Content of page 2
+        <a href="#" onclick="return show('Page1','Page2');">Show page 1</a>
+    </div> -->
+</body>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+</html>
