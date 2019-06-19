@@ -348,6 +348,14 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
 }
+.movie-trailer{
+    max-width: 970px!important;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 24px;
+}
+
+
 
 @media screen and (max-width: 991px)
 {
