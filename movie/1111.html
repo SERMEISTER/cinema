@@ -54,6 +54,45 @@
                 </div>
             </div>
 
+
+            <nav class="navbar fixed-top  navbar-expand-lg navbar-light bg-light  mobile-see">
+                <div>
+                    <a class="navbar-brand" href="#">
+                        <img src="./icons/cinema-logo.PNG" class="header-logo" alt="header-logo">
+                    </a>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#session">Сеанси <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacts">Контакти</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Скоро у прокаті</a>
+                        </li>
+                        <!-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dropdown link
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li> -->
+                    </ul>
+                </div>
+            </nav>
+
+
             <div class="main-body">
                 <div class="slider">
                     <div class="slider-wrapper" id="id-slider-wrapper" style="margin-left: 0px;">
@@ -65,8 +104,8 @@
                         <a class="slider-slide" style="background-image: url(./images/6.jpeg);"></a>
                     </div>
 
-                    <div class="slider-button slider-button-right" onclick="rightSlide()"></div>
-                    <div class="slider-button slider-button-left" onclick="leftSlide()"></div>
+                    <div class="slider-button slider-button-right" style="display: block;" onclick="rightSlide()" ></div>
+                    <div class="slider-button slider-button-left"  style="display: none;" onclick="leftSlide()"></div>
                 </div>
 
             </div>
@@ -84,11 +123,48 @@
 
                     <div class="schedule-films">
                         <div class="schedule-film">
-                            <a href="./movie/1111.html"></a>
-                        </div>
-                        <div class="schedule-film">
+                            <a href="./movie/1111.html">
+                                <img class="schedule-film-poster" src="./images/1.jpeg" alt="Велика мандрівка">
+                                <p class="schedule-film-title">Велика Мандрівка</p>
+                            </a>
 
                         </div>
+                        <div class="schedule-film">
+                            <a href="./movie/1111.html">
+                                <img class="schedule-film-poster" src="./images/2.jpeg" alt="Велика мандрівка">
+                                <p class="schedule-film-title">Супергерої</p>
+                            </a>
+
+                        </div>
+                        <div class="schedule-film">
+                            <a href="./movie/1111.html">
+                                <img class="schedule-film-poster" src="./images/3.jpeg" alt="Велика мандрівка">
+                                <p class="schedule-film-title">Детектив Пікачу</p>
+                            </a>
+
+                        </div>
+                        <div class="schedule-film">
+                            <a href="./movie/1111.html">
+                                <img class="schedule-film-poster" src="./images/4.jpeg" alt="Велика мандрівка">
+                                <p class="schedule-film-title">Edmond</p>
+                            </a>
+
+                        </div>
+                        <div class="schedule-film">
+                            <a href="./movie/1111.html">
+                                <img class="schedule-film-poster" src="./images/5.jpeg" alt="Велика мандрівка">
+                                <p class="schedule-film-title">Люди Ікс: Темний Фенікс</p>
+                            </a>
+
+                        </div>
+                        <div class="schedule-film">
+                            <a href="./movie/1111.html">
+                                <img class="schedule-film-poster" src="./images/6.jpeg" alt="Велика мандрівка">
+                                <p class="schedule-film-title">Месники: Фінал</p>
+                            </a>
+
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -98,75 +174,52 @@
 
 
         <div class="footer">
-
-            <p class="mountain-lake-text">A lake is an area filled with water</p>
-            <hr class="line-2">
-
-            <p class="text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
-                velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
-                voluptatem.</p>
-
-            <h3 class="headline-H3">Sed ut perspiciatis unde omnis iste</h3>
-            <p class="text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                laudantium, totam rem aperiam, <b>eaque ipsa quae ab illo inventore</b> veritatis et quasi <u
-                    style="color:#5a5aff">architecto beatae</u> vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
-                quia voluptas sit aspernatur aut odit aut fugit.</p>
-            <h4 class="headline-H4">Duis aute irure dolor in reprehenderit</h4>
-            <p class="text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-                id est laborum.</p>
-            <blockquote class="quote">“At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias”</blockquote>
-            <p class="text">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id
-                quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus
-                autem quibusdam et aut officiis.</p>
-            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                ut aliquip ex ea commodo consequat.</p>
+            <div class="main-width">
+                <div class="footer-section">
+                    <p class="footer-section-header">Кінотеатр</p>
+                    <p>
+                        <a href="#">Сеанси</a>
+                    </p>
+                    <p>
+                        <a href="#">Репертуар</a>
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <p class="footer-section-header">Про нас</p>
+                    <p>
+                        <a href="#">Зали</a>
+                    </p>
+                    <p>
+                        <a href="#">Афіша</a>
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <p class="footer-section-header">Наші координати</p>
+                    <p>
+                        <a href="#">Замовникам</a>
+                    </p>
+                    <p>
+                        <a href="#">Контакти</a>
+                    </p>
+                    <p>
+                        <a href="#">Повернення квитків</a>
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <p class="footer-section-header">Ми в мережі</p>
+                    <p>
+                        <a href="http://instagram.com">
+                            <img src="./icons/icon-facebook-white.svg" alt>
+                        </a>
+                        <a href="http://facebook.com">
+                            <img src="./icons/icon-instagram-white.svg" alt>
+                        </a>
+                    </p>
+                </div>
+            </div>
 
         </div>
     </div>
-
-
-    <script>
-        window.onscroll = function () {
-            var num = window.pageYOffset;
-
-            //console.log(num);
-            var header = document.getElementsByClassName('header');
-            header = header[0];
-            //console.log(header);
-            var atribute;
-
-            if (num == 0) {
-                atribute = "header";
-                header.setAttribute("class", atribute);
-            }
-            else {
-                atribute = "header scrolled";
-                header.setAttribute("class", atribute);
-            }
-            //console.log(atribute);
-        }
-
-
-        function rightSlide(){
-            var slide = document.getElementById("id-slider-wrapper");
-            if(parseInt(slide.style.marginLeft) != -2848)
-            {
-                slide.style.marginLeft = parseInt(slide.style.marginLeft) -712 + "px";
-            }
-            //console.log( parseInt(slide.style.marginLeft));
-        }
-        function leftSlide(){
-            var slide = document.getElementById("id-slider-wrapper");
-            if(parseInt(slide.style.marginLeft) != 0)
-            {
-                slide.style.marginLeft = parseInt(slide.style.marginLeft) +712 + "px";
-            }
-        }
-    </script>
-
 
 
     <!-- <script>
@@ -187,5 +240,16 @@
         <a href="#" onclick="return show('Page1','Page2');">Show page 1</a>
     </div> -->
 </body>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 
 </html>
