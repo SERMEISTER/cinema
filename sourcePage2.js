@@ -43,7 +43,7 @@ function rightSlide(){
             tmp = tmp - 712;
         }
         // console.log(tmp);
-        slide.style.marginLeft=tmp + "px";
+        slide.style.marginLeft=tmp -30 + "px";
     }
 }
 function leftSlide(){
@@ -54,9 +54,18 @@ function leftSlide(){
         slide.style.marginLeft = parseInt(slide.style.marginLeft) +712 + "px";
 
     }
-    if(parseInt(slide.style.marginLeft) > 0)
+    if(parseInt(slide.style.marginLeft) >= 0)
     {
         slide.style.marginLeft = 0 + "px";
         document.getElementsByClassName("slider-button-left")[0].style.display = "none";
     }
 }
+
+$(document).ready(function(){
+    $("#myInput").on("keyup", function() {
+      var value = $(this).val().toLowerCase();
+      $(".dropdown-menu li").filter(function() {
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+      });
+    });
+});

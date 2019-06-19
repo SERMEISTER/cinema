@@ -163,6 +163,36 @@ body{
     background-size: cover;
     flex-shrink: 0;
 }
+.slide-mask{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.2);
+    position: relative;
+    box-sizing: border-box;
+    transition: .25s;
+}
+.slide-mask:hover{
+    background-color: rgba(0,0,0,.4);
+}
+.slide-content {
+    position: absolute;
+    bottom: 24px;
+    left: 32px;
+    right: 32px;
+    box-sizing: border-box;
+}
+.slide-title{
+    font-family: 'Roboto';
+    font-size: 34px;
+    line-height: 40px;
+    font-weight: 700;
+    color: #fff;
+    width: calc(100% - 140px);
+    float: left;
+    margin-bottom: 10px;
+}
+
+
 
 .slider-button{
     position: absolute;
@@ -172,7 +202,7 @@ body{
     background-image: url(./icons/slider-arrow.png);
     background-position: 50%;
     background-repeat: no-repeat;
-    opacity: .75;
+    opacity: .90;
     cursor: pointer;
 }
 .slider-button-right{
@@ -210,6 +240,9 @@ body{
     flex-shrink: 0;
     transition: .25s;
 }
+.schedule-dates li:hover{
+    color: black;
+}
 .schedule-films {
     display: flex;
     justify-content: flex-start;
@@ -237,6 +270,34 @@ body{
 .schedule-film a{
     text-decoration: none!important;
 }
+
+.schedule-film-sessions{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.session
+{
+    border: 1px solid rgba(115,35,60,.4);
+    color: #73233c;
+    font-size: 14px;
+    height: 32px;
+    line-height: 30px;
+    box-sizing: border-box;
+    margin-right: 8px;
+    margin-bottom: 16px;
+    text-align: center;
+    font-weight: 700;
+    position: relative;
+    cursor: pointer;
+    flex-shrink: 0;
+    padding: 0 8px;
+    transition: .25s;
+}
+.session:hover{
+    border-color: black;
+}
+
 
 .footer .main-width {
     padding-top: 38px;
@@ -268,6 +329,26 @@ body{
 
 
 
+.schedule-hall{
+    border-bottom: 1px solid rgba(34,34,34,.1);
+    padding: 33px 0;
+    overflow: hidden;
+}
+.schedule-hall-name{
+    float: left;
+    width: 140px;
+    font-size: 16px;
+    font-weight: 700;
+    padding-top: 5px;
+}
+.schedule-hall-sessions{
+    width: calc(100% - 140px);
+    float: right;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 @media screen and (max-width: 991px)
 {
     body {
@@ -286,6 +367,7 @@ body{
         width: auto;
         padding: 0 6.4vw;
     }
+
     .schedule-dates {
         display: flex;
         flex-direction: row;
@@ -315,6 +397,19 @@ body{
         flex-basis: 85.33333vw;
         height: 48vw;
     }
+    .slide-mask{
+        padding: 4.26667vw;
+    }
+    .slide-content {
+        bottom: 4.26667vw;
+        left: 4.26667vw;
+        right: 4.26667vw;
+    }
+    .slide-title {
+        font-size: 6.4vw;
+        line-height: 6.4vw;
+        width: auto;
+    }
 
 
     .schedule-films {
@@ -338,6 +433,13 @@ body{
         line-height: 5.86667vw;
         margin-bottom: 4.26667vw;
     }
+    .session {
+        height: 8.53333vw;
+        line-height: 8vw;
+        font-size: 3.73333vw;
+        padding: 0 2.13333vw;
+    }
+
     .header-logo{
         position: static;
         display: inline-block;
@@ -360,4 +462,21 @@ body{
     .footer-section-header{
         margin-bottom: 6.66667vw;
     }
+
+
+    .schedule-halls{
+        padding: 0 6.4vw;
+    }
+    .schedule-hall{
+        padding: 8.53333vw 0 12.8vw;
+    }
+    .schedule-hall-name {
+        width: 33.33333vw;
+        font-size: 4vw;
+        line-height: 5.86667vw;
+        padding-top: 1.33333vw;
+    }  
+    .schedule-hall-sessions{
+        width: calc(100% - 33.5vw);
+    }  
 }

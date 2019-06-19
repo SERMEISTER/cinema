@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../stylePage2.css">
 
-    <script src='../sourcePage2.js'></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -57,7 +56,7 @@
 
             <nav class="navbar fixed-top  navbar-expand-lg navbar-light bg-light  mobile-see">
                 <div>
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="../index.html">
                         <img src="../icons/cinema-logo.PNG" class="header-logo" alt="header-logo">
                     </a>
                 </div>
@@ -83,82 +82,133 @@
 
 
             <div class="main-body">
-                <!-- <div class="slider">
-                    <div class="slider-wrapper" id="id-slider-wrapper" style="margin-left: 0px;">
-                        <a class="slider-slide" style="background-image: url(../images/1.jpeg);"></a>
-                        <a class="slider-slide" style="background-image: url(../images/2.jpeg);"></a>
-                        <a class="slider-slide" style="background-image: url(../images/3.jpeg);"></a>
-                        <a class="slider-slide" style="background-image: url(../images/4.jpeg);"></a>
-                        <a class="slider-slide" style="background-image: url(../images/5.jpeg);"></a>
-                        <a class="slider-slide" style="background-image: url(../images/6.jpeg);"></a>
-                    </div>
-
-                    <div class="slider-button slider-button-right" style="display: block;" onclick="rightSlide()"></div>
-                    <div class="slider-button slider-button-left" style="display: none;" onclick="leftSlide()"></div>
-                </div> -->
                 <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item"  src="https://www.youtube.com/embed/97JjmzzbpcY"  allowfullscreen></iframe>
-                      </div>
-
-                
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/97JjmzzbpcY"
+                        allowfullscreen></iframe>
+                </div>
                 <div class="schedule">
-                        <div class="main-width">
-                            <h1>Сеанси</h1>
-                            <ul class="schedule-dates">
-                                <li>15 червня, сб</li>
-                                <li>16 червня, нд</li>
-                                <li>17 червня, пн</li>
-                                <li>18 червня, вт</li>
-                                <li>19 червня, ср</li>
-                            </ul>
-        
-                            <div class="schedule-films">
-                                <div class="schedule-film">
-                                    <a href="./movie/1111.html">
-                                        <img class="schedule-film-poster" src="./images/1.jpeg" alt="Велика мандрівка">
-                                        <p class="schedule-film-title">Велика Мандрівка</p>
-                                    </a>
-        
+                    <div class="main-width">
+                        <h1>Сеанси</h1>
+                        <ul class="schedule-dates">
+                            <li>15 червня, сб</li>
+                            <li>16 червня, нд</li>
+                            <li>17 червня, пн</li>
+                            <li>18 червня, вт</li>
+                            <li>19 червня, ср</li>
+                        </ul>
+
+                        <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Усі формати
+                            <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                            <input class="form-control" id="myInput" type="text" placeholder="Search..">
+                            <li><a href="#">2D</a></li>
+                            <li><a href="#">3D</a></li>
+                        </ul>
+
+                        <div class="schedule-halls">
+                            <div class="schedule-hall">
+                                <p class="schedule-hall-name">"Синій зал"</p>
+                                <div class="schedule-hall-sessions">
+                                        <div class="session">11:10</div>
+                                        <div class="session">12:45</div>
+                                        <div class="session">17:00</div>
                                 </div>
-                                <div class="schedule-film">
-                                    <a href="./movie/1111.html">
-                                        <img class="schedule-film-poster" src="./images/2.jpeg" alt="Велика мандрівка">
-                                        <p class="schedule-film-title">Супергерої</p>
-                                    </a>
-        
-                                </div>
-                                <div class="schedule-film">
-                                    <a href="./movie/1111.html">
-                                        <img class="schedule-film-poster" src="./images/3.jpeg" alt="Велика мандрівка">
-                                        <p class="schedule-film-title">Детектив Пікачу</p>
-                                    </a>
-        
-                                </div>
-                                <div class="schedule-film">
-                                    <a href="./movie/1111.html">
-                                        <img class="schedule-film-poster" src="./images/4.jpeg" alt="Велика мандрівка">
-                                        <p class="schedule-film-title">Edmond</p>
-                                    </a>
-        
-                                </div>
-                                <div class="schedule-film">
-                                    <a href="./movie/1111.html">
-                                        <img class="schedule-film-poster" src="./images/5.jpeg" alt="Велика мандрівка">
-                                        <p class="schedule-film-title">Люди Ікс: Темний Фенікс</p>
-                                    </a>
-        
-                                </div>
-                                <div class="schedule-film">
-                                    <a href="./movie/1111.html">
-                                        <img class="schedule-film-poster" src="./images/6.jpeg" alt="Велика мандрівка">
-                                        <p class="schedule-film-title">Месники: Фінал</p>
-                                    </a>
-        
-                                </div>
-        
                             </div>
+                            <div class="schedule-hall">
+                                    <p class="schedule-hall-name">"Червоний зал"</p>
+                                    <div class="schedule-hall-sessions">
+                                            <div class="session">19:00</div>
+                                    </div>
+                                </div>
                         </div>
                     </div>
+                </div>
+
+                <div class="movie-info"></div>
+
+                <div class="schedule">
+                    <div class="main-width">
+                        <h2>Дивіться також</h2>
+                        <ul class="schedule-dates">
+                            <li>15 червня, сб</li>
+                            <li>16 червня, нд</li>
+                            <li>17 червня, пн</li>
+                            <li>18 червня, вт</li>
+                            <li>19 червня, ср</li>
+                        </ul>
+
+                        <div class="schedule-films">
+                            <div class="schedule-film">
+                                <a href="../movie/1111.html">
+                                    <img class="schedule-film-poster" src="../images/1.jpeg" alt="Велика мандрівка">
+                                    <p class="schedule-film-title">Велика Мандрівка</p>
+                                </a>
+                                <div class="schedule-film-sessions">
+                                    <div class="session">11:10</div>
+                                    <div class="session">12:45</div>
+                                    <div class="session">17:00</div>
+                                    <div class="session">19:00</div>
+                                </div>
+                            </div>
+                            <div class="schedule-film">
+                                <a href="../movie/1111.html">
+                                    <img class="schedule-film-poster" src="../images/2.jpeg" alt="Велика мандрівка">
+                                    <p class="schedule-film-title">Супергерої</p>
+                                </a>
+                                <div class="schedule-film-sessions">
+                                    <div class="session">12:10</div>
+                                    <div class="session">19:00</div>
+                                    <div class="session">21:10</div>
+                                </div>
+                            </div>
+                            <div class="schedule-film">
+                                <a href="../movie/1111.html">
+                                    <img class="schedule-film-poster" src="../images/3.jpeg" alt="Велика мандрівка">
+                                    <p class="schedule-film-title">Детектив Пікачу</p>
+                                </a>
+                                <div class="schedule-film-sessions">
+                                    <div class="session">10:55</div>
+                                    <div class="session">13:55</div>
+                                    <div class="session">21:25</div>
+                                </div>
+                            </div>
+                            <div class="schedule-film">
+                                <a href="../movie/1111.html">
+                                    <img class="schedule-film-poster" src="../images/4.jpeg" alt="Велика мандрівка">
+                                    <p class="schedule-film-title">Edmond</p>
+                                </a>
+                                <div class="schedule-film-sessions">
+                                    <div class="session">14:25</div>
+                                    <div class="session">21:25</div>
+                                </div>
+                            </div>
+                            <div class="schedule-film">
+                                <a href="../movie/1111.html">
+                                    <img class="schedule-film-poster" src="../images/5.jpeg" alt="Велика мандрівка">
+                                    <p class="schedule-film-title">Люди Ікс: Темний Фенікс</p>
+                                </a>
+                                <div class="schedule-film-sessions">
+                                    <div class="session">10:30</div>
+                                    <div class="session">14:45</div>
+                                    <div class="session">18:55</div>
+                                    <div class="session">21:00</div>
+                                </div>
+                            </div>
+                            <div class="schedule-film">
+                                <a href="../movie/1111.html">
+                                    <img class="schedule-film-poster" src="../images/6.jpeg" alt="Велика мандрівка">
+                                    <p class="schedule-film-title">Месники: Фінал</p>
+                                </a>
+                                <div class="schedule-film-sessions">
+                                    <div class="session">12:15</div>
+                                    <div class="session">17:40</div>
+                                    <div class="session">21:30</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -226,5 +276,8 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+
+
+<script src='../sourcePage2.js'></script>
 
 </html>
